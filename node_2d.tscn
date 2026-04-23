@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bawxp2yeunwi3"]
+
+[ext_resource type="Script" uid="uid://c4mnbcy8os7du" path="res://main.gd" id="1_wtcfe"]
+[ext_resource type="AudioStream" uid="uid://cwkslb64wdgcr" path="res://16-Bit Beat Em All _Clement Panchout.wav" id="2_0e48y"]
+[ext_resource type="Script" uid="uid://cd33050luwig7" path="res://conductor.gd" id="3_epypp"]
+
+[node name="Node2D" type="Node2D" unique_id=243712757]
+script = ExtResource("1_wtcfe")
+
+[node name="conductor" type="AudioStreamPlayer" parent="." unique_id=1923254964]
+stream = ExtResource("2_0e48y")
+autoplay = true
+script = ExtResource("3_epypp")
+
+[node name="RestartButton" type="Button" parent="." unique_id=346844678]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_colors/font_color = Color(0.40008873, 0.8390846, 0.9291895, 1)
+theme_override_font_sizes/font_size = 32
+text = "Restart Game"
